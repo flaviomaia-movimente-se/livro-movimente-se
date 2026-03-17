@@ -8,44 +8,59 @@
 <style>
 
 body{
-font-family: Arial, sans-serif;
 margin:0;
-background:#f5f5f5;
+font-family: Arial, sans-serif;
+background: linear-gradient(180deg, #1a1a1a, #3b1f1f, #f5f5f5);
 color:#333;
 text-align:center;
 }
 
+/* HEADER MAIS LEVE */
 header{
-background:#111;
+padding:60px 20px 30px;
 color:white;
-padding:60px 20px;
+background:transparent;
 }
 
 header h1{
-font-size:42px;
-margin-bottom:10px;
+font-size:46px;
+margin-bottom:15px;
+letter-spacing:1px;
 }
 
 header p{
 font-size:20px;
 max-width:600px;
 margin:auto;
+opacity:0.9;
 }
 
+/* CONTAINER */
 .container{
 max-width:900px;
 margin:auto;
-padding:40px 20px;
+padding:20px;
 }
 
+/* LIVRO */
 .book{
-margin:40px 0;
+margin:30px 0;
 }
 
 .book img{
-width:260px;
-box-shadow:0 15px 40px rgba(0,0,0,0.4);
-border-radius:8px;
+width:320px;
+max-width:90%;
+display:block;
+margin:auto;
+box-shadow:0 25px 60px rgba(0,0,0,0.6);
+border-radius:10px;
+}
+
+/* TEXTO DE DESTAQUE */
+.highlight{
+font-size:22px;
+font-weight:bold;
+margin-top:20px;
 }
 
 /* BOTÕES */
@@ -61,7 +76,7 @@ font-weight:bold;
 transition:0.3s;
 }
 
-/* DIGITAL (laranja) */
+/* LARANJA */
 .btn-digital{
 background:#ff6b00;
 }
@@ -70,7 +85,7 @@ background:#ff6b00;
 background:#e65c00;
 }
 
-/* FÍSICO (azul escuro) */
+/* AZUL ESCURO */
 .btn-fisico{
 background:#0d3b66;
 }
@@ -88,13 +103,20 @@ background:#444;
 background:#222;
 }
 
+/* SEÇÕES */
 .section{
-margin-top:50px;
+margin-top:60px;
 }
 
 .section h2{
 font-size:28px;
 margin-bottom:20px;
+}
+
+.section p{
+max-width:700px;
+margin:auto;
+line-height:1.6;
 }
 
 .benefits{
@@ -105,6 +127,7 @@ font-size:18px;
 line-height:1.8;
 }
 
+/* FOOTER */
 footer{
 margin-top:60px;
 background:#111;
@@ -122,18 +145,18 @@ font-size:14px;
 
 <h1>MOVIMENTE-SE</h1>
 
-<p>Saia da estagnação e retome o controle da sua vida.</p>
+<p><strong>Se você sente que sua vida está parada, este livro é o ponto de virada que você precisa.</strong></p>
 
 </header>
 
 <div class="container">
 
-<!-- CAPA -->
 <div class="book">
-<img src="capa-livro.png.png" alt="Livro Movimente-se">
+<img src="capa-livro.png" alt="Livro Movimente-se">
 </div>
 
-<!-- BOTÕES ABAIXO DA CAPA -->
+<p class="highlight">Escolha como começar sua transformação hoje:</p>
+
 <a class="btn btn-digital" href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" target="_blank">
 📱 Comprar versão digital
 </a>
@@ -147,10 +170,22 @@ font-size:14px;
 <div class="section">
 <h2>Por que ler este livro?</h2>
 <p>
-Muitas pessoas sabem o que precisam fazer, mas permanecem paralisadas
-pela dúvida, medo ou procrastinação.  
-Este livro é um convite para despertar, refletir e agir.
+Você sabe o que precisa fazer… mas não faz.  
+A procrastinação, o medo e a dúvida travam seu progresso.  
+Este livro é um chamado para sair da estagnação e assumir o controle da sua vida.
 </p>
+</div>
+
+<div class="section">
+<h2>Para quem é este livro?</h2>
+
+<div class="benefits">
+✔ Para quem se sente travado na vida<br>
+✔ Para quem quer mais disciplina<br>
+✔ Para quem busca propósito<br>
+✔ Para quem quer sair da teoria e entrar em ação
+</div>
+
 </div>
 
 <div class="section">
@@ -166,12 +201,11 @@ Este livro é um convite para despertar, refletir e agir.
 </div>
 
 <div class="section">
-<h2>Conheça o autor</h2>
+<h2>Sobre o autor</h2>
 
 <p>
-Flavio Maia é autor do livro <strong>Movimente-se</strong>.  
-Sua escrita conecta reflexão, fé e ação prática, conduzindo o leitor
-a uma jornada de crescimento pessoal e transformação consciente.
+Flavio Maia escreve para provocar reflexão e gerar ação.  
+Sua missão é ajudar pessoas a saírem da estagnação e viverem com propósito.
 </p>
 
 <a class="btn btn-autor" href="https://uiclap.bio/flaviomaia-movimente-se" target="_blank">
