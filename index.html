@@ -3,143 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Movimente-se | Flavio Maia</title>
+<title>Movimente-se | Flávio Maia</title>
 
 <style>
 
 body{
+font-family:Arial, sans-serif;
 margin:0;
-font-family: Arial, sans-serif;
-background:#ffffff;
-color:#222;
+background:#f5f5f5;
+color:#333;
 text-align:center;
 }
 
-header{
-padding:60px 20px 20px;
-background:#fff;
+/* HERO */
+.hero{
+padding:60px 20px;
+background:#ffffff;
 }
 
-header h1{
-font-size:44px;
-margin-bottom:15px;
-}
-
-header p{
-font-size:20px;
-max-width:650px;
-margin:auto;
-color:#555;
-}
-
-/* LIVRO */
-.book{
-margin:30px 0;
-}
-
-.book img{
-width:340px;
-max-width:90%;
-display:block;
-margin:auto;
-box-shadow:0 30px 80px rgba(0,0,0,0.25);
-border-radius:10px;
-}
-
-/* BOTÕES */
-.btn{
-display:inline-block;
-margin-top:15px;
-padding:16px 35px;
-font-size:18px;
-color:white;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
+.hero img{
+max-width:320px;
+border-radius:12px;
+box-shadow:0 25px 60px rgba(0,0,0,0.3);
 transition:0.3s;
 }
 
-.btn-digital{
-background:#ff6b00;
+.hero img:hover{
+transform:scale(1.05);
 }
 
-.btn-digital:hover{
-background:#e65c00;
+/* BOTÕES */
+.cta a{
+display:inline-block;
+margin:10px;
+padding:15px 25px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none;
+color:white;
+animation:pulse 1.5s infinite;
+}
+
+.btn-digital{
+background:#ff7a00;
 }
 
 .btn-fisico{
 background:#0d3b66;
 }
 
-.btn-fisico:hover{
-background:#0b2f52;
-}
-
 .btn-autor{
 background:#444;
 }
 
-.btn-autor:hover{
-background:#222;
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
 }
 
 /* SEÇÕES */
 .section{
-margin-top:60px;
-padding:0 20px;
-}
-
-.section h2{
-font-size:28px;
-margin-bottom:20px;
-}
-
-.section p{
-max-width:700px;
-margin:auto;
-line-height:1.6;
-}
-
-.benefits{
-text-align:left;
-max-width:600px;
-margin:auto;
-font-size:18px;
-line-height:1.8;
-}
-
-/* DESTAQUE */
-.highlight{
-font-size:22px;
-font-weight:bold;
+padding:50px 20px;
+background:white;
 margin-top:20px;
 }
 
-/* AUTOR */
-.author{
-margin-top:30px;
+h2{
+margin-bottom:20px;
 }
 
+/* AUTOR */
 .author img{
-width:180px;
+width:200px;
 border-radius:50%;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
 margin-bottom:15px;
 }
 
-/* CTA */
-.cta{
-margin-top:60px;
-padding:40px 20px;
-background:#f7f7f7;
+/* CONTADOR */
+#contador{
+font-size:20px;
+font-weight:bold;
+color:#c0392b;
+margin:20px 0;
 }
 
+/* FOOTER */
 footer{
-margin-top:40px;
 background:#111;
-color:white;
-padding:25px;
-font-size:14px;
+color:#fff;
+padding:20px;
+margin-top:30px;
 }
 
 </style>
@@ -147,60 +102,30 @@ font-size:14px;
 
 <body>
 
-<header>
+<!-- CAPA -->
+<div class="hero">
+<img src="capa-uiclap-MOVIMENTE-SE-ua97732.jpg" alt="Livro Movimente-se">
 
-<h1>MOVIMENTE-SE</h1>
+<h1>Saia da estagnação e retome o controle da sua vida</h1>
 
-<p><strong>Você sabe o que precisa fazer… mas não faz.  
-Este livro vai te tirar da estagnação e colocar você em ação.</strong></p>
-
-</header>
-
-<div class="book">
-<img src="capa-livro.png" alt="Livro Movimente-se">
+<div id="contador">
+⏳ Oferta especial termina em: <span id="tempo"></span>
 </div>
 
-<p class="highlight">Comece hoje a mudança que você vem adiando.</p>
+<div class="cta">
+<a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" class="btn-digital">📘 Comprar versão digital</a>
 
-<a class="btn btn-digital" href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" target="_blank">
-📱 Comprar versão digital
-</a>
+<a href="https://loja.uiclap.com/titulo/ua97732/" class="btn-fisico">📦 Comprar versão física</a>
+</div>
+</div>
 
-<br>
-
-<a class="btn btn-fisico" href="https://loja.uiclap.com/titulo/ua97732/" target="_blank">
-📘 Comprar versão física
-</a>
-
+<!-- BENEFÍCIOS -->
 <div class="section">
-<h2>Por que este livro é diferente?</h2>
-<p>
-A maioria dos livros ensina o que fazer.  
-Este livro te mostra como sair da inércia e realmente agir.
-</p>
-</div>
+<h2>Por que ler este livro?</h2>
 
-<div class="section">
-<h2>Para quem é este livro?</h2>
-
-<div class="benefits">
-✔ Para quem se sente travado na vida<br>
-✔ Para quem quer sair da procrastinação<br>
-✔ Para quem busca clareza e propósito<br>
-✔ Para quem quer agir, não apenas pensar
-</div>
-
-</div>
-
-<div class="section">
-<h2>O que você vai aprender</h2>
-
-<div class="benefits">
-✔ Como sair da estagnação<br>
-✔ Como transformar intenção em ação<br>
-✔ Como criar disciplina<br>
-✔ Como tomar decisões com clareza
-</div>
+<p>✔ Desenvolva disciplina e ação</p>
+<p>✔ Supere a estagnação mental</p>
+<p>✔ Tome controle da sua vida</p>
 
 </div>
 
@@ -208,65 +133,93 @@ Este livro te mostra como sair da inércia e realmente agir.
 <div class="section">
 <h2>O que estão dizendo</h2>
 
-<div class="benefits">
-
-<p><strong>“Esse livro me fez sair da inércia. Simples e transformador.”</strong><br>— Leitor</p>
-
-<br>
-
-<p><strong>“Um chamado direto para agir.”</strong><br>— Leitor</p>
-
-<br>
-
-<p><strong>“Me ajudou a destravar decisões importantes.”</strong><br>— Leitor</p>
-
-</div>
-
-</div>
-
-<!-- CTA FINAL -->
-<div class="cta">
-
-<h2>Você pode continuar adiando… ou começar agora.</h2>
-
-<a class="btn btn-digital" href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" target="_blank">
-📱 Comprar versão digital
-</a>
-
-<br>
-
-<a class="btn btn-fisico" href="https://loja.uiclap.com/titulo/ua97732/" target="_blank">
-📘 Comprar versão física
-</a>
-
+<p><strong>“Esse livro me tirou da inércia.”</strong></p>
+<p><strong>“Simples, direto e transformador.”</strong></p>
+<p><strong>“Me fez agir de verdade.”</strong></p>
 </div>
 
 <!-- AUTOR -->
 <div class="section">
 <h2>Sobre o autor</h2>
 
-<div class="author">
-<img src="autor.jpg" alt="Flavio Maia">
-</div>
+<img src="foto-autor.png" alt="Flávio Maia">
 
 <p>
-Flavio Maia escreve para provocar mudança real.  
-Seu foco é ajudar pessoas a saírem da estagnação e viverem com propósito.
+Flávio Maia é autor do livro <strong>Movimente-se</strong> e tem como missão ajudar pessoas a saírem da estagnação e viverem com propósito, disciplina e ação.
 </p>
 
-<a class="btn btn-autor" href="https://uiclap.bio/flaviomaia-movimente-se" target="_blank">
-Saiba mais sobre o autor
-</a>
+<br>
+
+<a href="https://uiclap.bio/flaviomaia-movimente-se" class="btn-autor">Saiba mais sobre o autor</a>
 
 </div>
 
+<!-- FOOTER -->
 <footer>
-
-© 2026 • Flavio Maia  
-<br>
+© 2026 - Flávio Maia<br>
 Todos os direitos reservados
-
 </footer>
+
+<!-- CONTADOR SCRIPT -->
+<script>
+function iniciarContador() {
+  const tempoFinal = new Date().getTime() + (2 * 60 * 60 * 1000);
+
+  const intervalo = setInterval(() => {
+    const agora = new Date().getTime();
+    const distancia = tempoFinal - agora;
+
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+    document.getElementById("tempo").innerHTML =
+      horas + "h " + minutos + "m " + segundos + "s";
+
+    if (distancia < 0) {
+      clearInterval(intervalo);
+      document.getElementById("tempo").innerHTML = "Encerrado";
+    }
+  }, 1000);
+}
+
+iniciarContador();
+</script>
+
+<!-- PROVA SOCIAL DINÂMICA -->
+<script>
+const mensagens = [
+"📘 João acabou de comprar",
+"🔥 Maria começou a leitura",
+"🚀 Carlos está evoluindo com o livro",
+"💡 Ana recomendou este livro"
+];
+
+setInterval(() => {
+  const msg = mensagens[Math.floor(Math.random() * mensagens.length)];
+  const div = document.createElement("div");
+
+  div.innerText = msg;
+  div.style.position = "fixed";
+  div.style.bottom = "20px";
+  div.style.left = "20px";
+  div.style.background = "#111";
+  div.style.color = "#fff";
+  div.style.padding = "10px 15px";
+  div.style.borderRadius = "8px";
+  div.style.fontSize = "14px";
+  div.style.boxShadow = "0 10px 25px rgba(0,0,0,0.3)";
+  div.style.zIndex = "999";
+
+  document.body.appendChild(div);
+
+  setTimeout(() => {
+    div.remove();
+  }, 4000);
+
+}, 8000);
+</script>
 
 </body>
 </html>
+✅ O QUE VOCÊ PRECI
