@@ -44,17 +44,9 @@ color:white;
 animation:pulse 1.5s infinite;
 }
 
-.btn-digital{
-background:#ff7a00;
-}
-
-.btn-fisico{
-background:#0d3b66;
-}
-
-.btn-autor{
-background:#444;
-}
+.btn-digital{ background:#ff7a00; }
+.btn-fisico{ background:#0d3b66; }
+.btn-autor{ background:#444; }
 
 @keyframes pulse{
 0%{transform:scale(1);}
@@ -74,11 +66,20 @@ margin-bottom:20px;
 }
 
 /* AUTOR */
+.author{
+background:linear-gradient(180deg, #ffffff, #f8f8f8);
+border-top:1px solid #eee;
+}
+
 .author img{
-width:200px;
+width:220px;
 border-radius:50%;
-box-shadow:0 15px 40px rgba(0,0,0,0.25);
-margin-bottom:15px;
+box-shadow:0 20px 50px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.author img:hover{
+transform:scale(1.05);
 }
 
 /* CONTADOR */
@@ -102,21 +103,48 @@ margin-top:30px;
 
 <body>
 
-<!-- CAPA -->
+<!-- HERO -->
 <div class="hero">
+
 <img src="capa-uiclap-MOVIMENTE-SE-ua97732.jpg" alt="Livro Movimente-se">
 
 <h1>Saia da estagnação e retome o controle da sua vida</h1>
+
+<div style="margin-top:20px; font-size:14px; color:#666;">
+🔥 Mais de <strong>100 leitores</strong> já deram o primeiro passo
+</div>
 
 <div id="contador">
 ⏳ Oferta especial termina em: <span id="tempo"></span>
 </div>
 
-<div class="cta">
-<a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" class="btn-digital">📘 Comprar versão digital</a>
-
-<a href="https://loja.uiclap.com/titulo/ua97732/" class="btn-fisico">📦 Comprar versão física</a>
+<div style="
+background:#f9f9f9;
+padding:15px;
+margin:20px auto;
+max-width:500px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+font-size:14px;
+">
+✅ <strong>Garantia de transformação:</strong><br>
+Se você aplicar os princípios deste livro, sua forma de agir e pensar não será mais a mesma.
 </div>
+
+<div style="margin:20px 0; font-size:18px;">
+<strong>Escolha como deseja começar sua transformação:</strong>
+</div>
+
+<div class="cta">
+<a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" class="btn-digital">
+📘 Quero começar agora (Digital)
+</a>
+
+<a href="https://loja.uiclap.com/titulo/ua97732/" class="btn-fisico">
+📦 Receber o livro físico em casa
+</a>
+</div>
+
 </div>
 
 <!-- BENEFÍCIOS -->
@@ -136,22 +164,49 @@ margin-top:30px;
 <p><strong>“Esse livro me tirou da inércia.”</strong></p>
 <p><strong>“Simples, direto e transformador.”</strong></p>
 <p><strong>“Me fez agir de verdade.”</strong></p>
+
 </div>
 
 <!-- AUTOR -->
-<div class="section">
+<div class="section author">
+
 <h2>Sobre o autor</h2>
 
-<img src="foto-autor.png" alt="Flávio Maia">
+<img src="foto-autor-flavio-maia.jpg" alt="Flávio Maia">
 
-<p>
-Flávio Maia é autor do livro <strong>Movimente-se</strong> e tem como missão ajudar pessoas a saírem da estagnação e viverem com propósito, disciplina e ação.
+<h3 style="margin-top:10px; font-size:24px;">
+Flávio Maia
+</h3>
+
+<div style="
+display:inline-block;
+background:#ff7a00;
+color:white;
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+margin:10px 0;
+">
+Autor de Desenvolvimento Pessoal
+</div>
+
+<p style="max-width:600px; margin:0 auto;">
+Flávio Maia é autor do livro <strong>Movimente-se</strong> e dedica seu trabalho a despertar pessoas para uma vida com mais consciência, ação e propósito.
 </p>
 
 <br>
 
-<a href="https://uiclap.bio/flaviomaia-movimente-se" class="btn-autor">Saiba mais sobre o autor</a>
+<a href="https://uiclap.bio/flaviomaia-movimente-se" class="btn-autor">
+Saiba mais sobre o autor
+</a>
 
+</div>
+
+<!-- FINAL -->
+<div class="section" style="background:#111; color:#fff;">
+<h2>O próximo passo é seu</h2>
+<p>Você pode continuar como está… ou decidir agir hoje.</p>
+<p>A mudança começa com uma decisão.</p>
 </div>
 
 <!-- FOOTER -->
@@ -160,7 +215,7 @@ Flávio Maia é autor do livro <strong>Movimente-se</strong> e tem como missão 
 Todos os direitos reservados
 </footer>
 
-<!-- CONTADOR SCRIPT -->
+<!-- CONTADOR -->
 <script>
 function iniciarContador() {
   const tempoFinal = new Date().getTime() + (2 * 60 * 60 * 1000);
@@ -182,7 +237,6 @@ function iniciarContador() {
     }
   }, 1000);
 }
-
 iniciarContador();
 </script>
 
@@ -213,13 +267,9 @@ setInterval(() => {
 
   document.body.appendChild(div);
 
-  setTimeout(() => {
-    div.remove();
-  }, 4000);
-
+  setTimeout(() => div.remove(), 4000);
 }, 8000);
 </script>
 
 </body>
 </html>
-✅ O QUE VOCÊ PRECI
